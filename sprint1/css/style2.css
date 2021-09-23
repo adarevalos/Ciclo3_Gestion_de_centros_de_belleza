@@ -39,6 +39,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
 }
 
 .site-nav>a {
@@ -130,4 +131,8 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+a, ul {
+    text-decoration: none;
 }
