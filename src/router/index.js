@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+//import Home from "../views/Home.vue";
 import Principal from "../views/Principal.vue"; //cuando pongo /.../.../Principal -> Renderice PRINCIPAL (En azul)
 
 
@@ -9,11 +9,6 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/principal",
     name: "Principal",
     component: Principal,  //ESto sería una vista manejada por el router
   },

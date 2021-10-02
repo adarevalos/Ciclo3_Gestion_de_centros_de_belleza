@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p>VISTA PRINCIPAL</p>
+    <NavBar/>
     <Card/>
     
   </div>
@@ -9,11 +9,13 @@
 <script>
 // @ is an alias to /src
 import Card from "@/components/Card.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
   name: "Principal",
   components: {
-    Card
+    Card,
+    NavBar
   },
 };
 </script>
