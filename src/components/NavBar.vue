@@ -2,15 +2,28 @@
   <div>
     <div class="navbar">
       <router-link to="/">Inicio</router-link>
-      <router-link to="/productos">Productos</router-link>
+      <router-link to="/productos">Catálogo</router-link>
       <div class="dropdown">
-        <button class="dropbtn">Administrar Productos
+        <button class="dropbtn">
+          Administrar Productos
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
           <router-link to="/crearproducto">Crear Producto</router-link>
           <router-link to="/modificarproducto">Modificar Producto</router-link>
           <router-link to="/eliminarproducto">Eliminar Producto</router-link>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Empleados
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <router-link to="/crearempleado">Crear Empleado</router-link>
+          <router-link to="/buscarempleado">Buscar Empleado</router-link>
+          <router-link to="/modificarempleado">Modificar Empleado</router-link>
+          <router-link to="/eliminarempleado">Eliminar Empleado</router-link>
         </div>
       </div>
     </div>
@@ -22,48 +35,44 @@
           <li class="navbar-item"><router-link class="nav-link scrollto" to="/administracion">Administrar</router-link></li>
         </ul>
       </nav>   -->
-
   </div>
 </template>
 
 <script>
 export default {
-    name: "NavBar"
-}
+  name: "NavBar",
+};
 </script>
 
 <style scoped>
-
-.navbar{
-    display: flex;
-    width: 98vw; 
-    background-color:rgb(19, 110, 122);
-    border: 1px solid black;
-    /*justify-content: flex-end;*/
-
+.navbar {
+  display: flex;
+  width: 98vw;
+  background-color: rgb(19, 110, 122);
+  border: 1px solid black;
+  /*justify-content: flex-end;*/
 }
 
-.navbar-list{
-    display: flex;
-    list-style-type: none;
+.navbar-list {
+  display: flex;
+  list-style-type: none;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(221, 209, 209);
+a {
+  text-decoration: none;
+  color: rgb(221, 209, 209);
 }
 
-.navbar-item{
-    margin:5px;
-    
+.navbar-item {
+  margin: 5px;
 }
 
 /* Navbar container */
 .navbar {
-    display: flex;
-    width: 98vw; 
-    background-color:rgb(19, 110, 122);
-    border: 1px solid black;
+  display: flex;
+  width: 98vw;
+  background-color: rgb(19, 110, 122);
+  border: 1px solid black;
 }
 
 /* Links inside the navbar */
@@ -95,7 +104,8 @@ a{
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: rgb(72, 151, 161);
 }
 
@@ -105,7 +115,7 @@ a{
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -128,5 +138,4 @@ a{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 </style>

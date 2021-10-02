@@ -42,16 +42,18 @@
         :url="require('../assets/cera.jpg')"
         parrafo="Esta es una descripción del producto 2"
         ruta="/mi_producto" />
-                
+
+        <Card titulo="Producto 2" 
+        :url="require('../assets/cera.jpg')"
+        parrafo="Esta es una descripción del producto 2"
+        ruta="/mi_producto" />
+        
         <Card titulo="Producto 2" 
         :url="require('../assets/cera.jpg')"
         parrafo="Esta es una descripción del producto 2"
         ruta="/mi_producto" />
                 
-        <Card titulo="Producto 2" 
-        :url="require('../assets/cera.jpg')"
-        parrafo="Esta es una descripción del producto 2"
-        ruta="/mi_producto" />
+
     </div>
 
 

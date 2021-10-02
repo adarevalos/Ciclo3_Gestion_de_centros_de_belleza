@@ -7,6 +7,10 @@ import Administracion from "../views/crud-productos/Administracion.vue";
 import CreacionProducto from "../views/crud-productos/CreacionProducto.vue";
 import ModificacionProducto from "../views/crud-productos/ModificacionProducto.vue";
 import EliminacionProducto from "../views/crud-productos/EliminacionProducto.vue";
+import CreacionEmpleado from "../views/crud-empleados/CreacionEmpleado.vue";
+import BuscarUnEmpleado from "../views/crud-empleados/BuscarUnEmpleado.vue";
+import ModificacionEmpleado from "../views/crud-empleados/ModificacionEmpleado.vue";
+import EliminacionEmpleado from "../views/crud-empleados/EliminacionEmpleado.vue";
 
 Vue.use(VueRouter);
 
@@ -41,6 +45,27 @@ const routes = [
     name: "EliminacionProducto",
     component: EliminacionProducto, 
   },
+  {
+    path: "/crearempleado",
+    name: "CreacionEmpleado",
+    component: CreacionEmpleado, 
+  },
+  {
+    path: "/buscarempleado",
+    name: "BuscarUnEmpleado",
+    component: BuscarUnEmpleado, 
+  },
+  {
+    path: "/modificarempleado",
+    name: "ModificacionEmpleado",
+    component: ModificacionEmpleado, 
+  },
+  {
+    path: "/eliminarempleado",
+    name: "EliminacionEmpleado",
+    component: EliminacionEmpleado, 
+  },
+  
 ];
 
 const router = new VueRouter({
