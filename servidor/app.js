@@ -38,6 +38,7 @@ app.use(express.urlencoded({ extended: true }))
 // });
 app.use('/api', require('./routes/nota')); //Aqui conectamos las rutas (del folder routes) con este app.js
 app.use('/api', require('./routes/producto'));
+app.use('/api', require('./routes/empleado'));
 
 const history = require('connect-history-api-fallback'); 
 app.use(history()); 
